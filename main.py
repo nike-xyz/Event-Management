@@ -4,7 +4,6 @@ from PIL import Image, ImageTk
 from tkinter import ttk
 
 root=Tk()
-root.configure()
 homepage_res = "450x450"
 root.geometry(homepage_res) #600x400
 
@@ -30,7 +29,7 @@ tc.hide(1)
 tc.hide(2)
 tc.hide(3)
 
-page0_bg=Image.open("assets/bg3.jpeg")#"C:/Users/Rijutha/Desktop/pro/reg4.png")
+page0_bg=Image.open("assets/bg3.jpeg")
 resize=page0_bg.resize((450, 450),Image.ANTIALIAS)
 n_page0_bg=ImageTk.PhotoImage(resize)
 bg = Label(page0, image=n_page0_bg)
